@@ -1,18 +1,23 @@
 .navbar {
-  background-color: #282c34;
-  padding: 1rem;
+  background-color: #000000;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  padding: 1rem 2rem;
 }
 
-.navbar ul {
-  list-style: none;
+.nav-links {
   display: flex;
-  gap: 1rem;
+  list-style: none;
+  gap: 1.5rem;
 }
 
-.navbar li {
-  cursor: pointer;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
 }

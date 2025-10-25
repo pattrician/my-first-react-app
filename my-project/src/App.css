@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,206 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.content {
+  padding: 2rem;
+}
+
+.page {
+  text-align: center;
+  padding: 2rem;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* make page at least full screen height */
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.page p {
+  font-size: 1.3rem;  /* makes it slightly bigger than normal text */
+  color: #333;        /* dark gray text color */
+  line-height: 1.6;   /* adds comfortable spacing */
+}
+.highlight {
+  color: #007bff; /* blue color, same as your nav links */
+  font-weight: bold;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.highlight {
+  color: #00bfff; /* light blue */
+  font-weight: bold;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-container p:hover {
+  color: #000;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.contact-container svg {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-container p:hover svg {
+  transform: rotate(10deg);
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  height: 100vh; /* full screen */
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.3rem;
+  max-width: 600px;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  height: 100vh; /* full screen */
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.3rem;
+  max-width: 600px;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center */
+  align-items: center; /* horizontally center */
+  height: 100vh; /* full screen height */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+/* Intro Screen */
+.intro-screen {
+  background-color: #ffffff; /* white background */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circular Image */
+.intro-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #000; /* optional border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.intro-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+body {
+  background-color: rgba(128, 128, 128, 0.3); /* transparent gray */
+  margin: 0;
+  padding: 0;
 }
